@@ -1,0 +1,150 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("Images/7yfjc8jm8dt61.gif") center center/cover no-repeat;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.navbar a {
+  color: white !important;
+  font-size: 1.1em;
+}
+
+.navbar-brand {
+  font-size: 1.3em;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #bb86fc !important;
+}
+
+#home {
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+#home img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 1.2em;
+}
+
+.typewriter {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#typewriter-name,
+#typewriter-subtitle {
+  display: inline;
+  white-space: pre;
+}
+
+.name-line {
+  font-size: 2.2em;
+  margin-bottom: 0.4em;
+}
+
+.subtitle-line {
+  font-size: 1.2em;
+}
+
+.blinking-caret {
+  display: inline;
+  font-weight: bold;
+  color: white;
+  animation: blink 0.8s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+footer.footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Playfair Display', serif;
+  z-index: 2;
+}
+
+#social-linkedin:hover,
+#social-instagram:hover {
+  color: #bb86fc;
+  transition: color 0.3s ease;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.fade-in-alert {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.fade-in-alert.show {
+  opacity: 1;
+}

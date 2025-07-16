@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Michael Ramos</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #ffffff;
+      color: #000;
+      padding: 8px 16px;
+      z-index: 1000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: top 0.3s;
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    .fade-in {
+      visibility: hidden;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+        visibility: hidden;
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
+    }
+
+    .about-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .about-text p {
+      font-size: 1.05em;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-text {
+      padding-left: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-text {
+        padding-left: 0;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .floating-alert {
+      position: fixed;
+      top: 90px;
+      right: 5%;
+      z-index: 1050;
+      max-width: 300px;
+      padding: 1em 1.2em;
+      border-radius: 8px;
+      font-family: 'Playfair Display', serif;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateX(100%);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      text-align: justify;
+    }
+
+    .floating-alert.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .floating-alert.success {
+      background-color: #ffffff;
+      color: #000000;
+      border-left: 5px solid #28a745;
+    }
+
+    .floating-alert.error {
+      background-color: #ffe6e6;
+      color: #8b0000;
+      border-left: 5px solid #dc3545;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAVIGATION (no fade-in so it's tabbable immediately) -->
+<nav class="navbar navbar-expand-lg fixed-top px-4" style="background-color: rgba(0, 0, 0, 0.3);" role="navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white hover-underline-animation" href="./index.html">Home</a>
+    <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link hover-underline-animation text-white" href="./about.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link hover-underline-animation text-white" href="./portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link hover-underline-animation text-white" href="./Documents/Michael Ramos Spring 2025 Resume.pdf" target="_blank">Resume</a></li>
+        <li class="nav-item"><a class="nav-link hover-underline-animation text-white" href="./research.html">Research</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main id="main-content" role="main">
+  <section class="container-fluid" style="padding: 8em 2em 4em;">
+    <div class="fade-in" style="max-width: 1140px; margin: auto;">
+      <h2 class="text-center mb-5">About Me</h2>
+      <div class="clearfix">
+        <img src="./Images/about-1-1.jpg" class="about-img float-md-start me-md-4 mb-3" alt="Portrait of Michael Ramos" style="width: 300px; border-radius: 12px;">
+        <div class="about-text">
+          <p>Hello! I’m Michael Ramos, a dedicated and passionate undergraduate Computer Science student at California State University, Los Angeles, with an expected graduation date of Spring 2026. My focus lies in front-end web development, accessibility, and user-centered design — building clean, responsive, and inclusive digital experiences.</p>
+
+          <p>I currently work as an ITS Accessibility Tester at CSULA, where I collaborate with developers and digital teams to ensure our web platforms meet WCAG 2.1 AA and Section 508 accessibility standards. I perform audits using tools such as JAWS, WAVE, Equidox, ANDI, and CommonLook, and provide technical feedback to improve usability for all users — including those with disabilities. I’ve also earned certification as a Section 508 Trusted Tester through the Department of Homeland Security.</p>
+
+          <p>My technical toolkit includes HTML5, CSS3, JavaScript, Python, Git, and Bootstrap — with a strong emphasis on clean, scalable design. I’ve developed personal portfolio websites, team-based web applications, and academic accessibility projects, always with a strong commitment to empathy-driven development.</p>
+
+          <p>Outside of the classroom and code, I’ve volunteered since 2016 with Monte Sion’s Food Bank, supporting weekly outreach events and learning firsthand how consistent service makes a lasting impact. This experience has shaped my work ethic, leadership, and attention to community needs.</p>
+
+          <p>My career goal is to work as a front-end developer at a mission-driven company where I can build visually compelling, accessible websites and applications. I'm especially interested in working in tech-forward environments like Silicon Valley or with global nonprofits and startups prioritizing inclusive design and accessibility.</p>
+
+          <p>This site serves as a snapshot of my journey — including my academic projects, accessibility work, and growing portfolio. You can check out my GitHub below to see what I’ve been working on, or use the form at the bottom of this page to email me directly. I’m always open to connecting, collaborating, or just chatting about front-end development and accessibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="fade-in d-flex justify-content-center align-items-center mt-3">
+    <a href="https://github.com/mramosr2" target="_blank" class="d-flex align-items-center text-white text-decoration-none">
+      <img src="./Images/github-logo.jpg" alt="GitHub logo" style="width: 55px; height: 55px; border-radius: 50%; border: 2px solid #e0e0e0; margin-right: 0.6em;">
+      <span class="fs-5 hover-underline-animation">Visit my GitHub</span>
+    </a>
+  </div>
+
+  <div class="fade-in text-center mt-5">
+    <h4>Email me:</h4>
+  </div>
+
+  <div class="fade-in">
+    <form id="contact-form" class="container mt-3" novalidate>
+      <div class="mb-4">
+        <label for="senderEmail" class="form-label">Your Email Address</label>
+        <input type="text" class="form-control form-control-lg" id="senderEmail" name="email" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-4">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control form-control-lg" id="subject" name="_subject" placeholder="Subject..." required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control form-control-lg" id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-outline-light btn-lg px-4">Send Email</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<!-- Accessible Notification -->
+<div id="form-alert" class="floating-alert" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+<footer class="footer text-white py-3 mt-auto" role="contentinfo">
+  <div class="container-fluid">
+    <div class="row align-items-center text-center text-md-start">
+      <div class="col-md-6 mb-2 mb-md-0">
+        &copy; 2025 Michael Ramos
+        <a href="https://www.linkedin.com/in/michael-ramos-309108242" target="_blank" class="ms-3 text-white d-inline-flex align-items-center hover-underline-animation">
+          <i class="bi bi-linkedin" style="font-size: 1.2em;"></i>
+        </a>
+        <a href="https://www.instagram.com/mr.ramos_1000/" target="_blank" class="ms-2 text-white d-inline-flex align-items-center hover-underline-animation">
+          <i class="bi bi-instagram" style="font-size: 1.2em;"></i>
+        </a>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <span class="hover-underline-animation">Developed by Michael Ramos</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const alertBox = document.getElementById("form-alert");
+
+  function showAlert(message, type = "success") {
+    alertBox.textContent = message;
+    alertBox.className = `floating-alert ${type} show`;
+    setTimeout(() => {
+      alertBox.classList.remove("show");
+    }, 5000);
+  }
+
+  function validateEmail(email) {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+  }
+
+  function validateTextLength(text) {
+    return text.trim().length >= 5;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("senderEmail").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!validateEmail(email)) {
+      showAlert("Please enter a valid email address (e.g. name@example.com)", "error");
+      return;
+    }
+
+    if (!validateTextLength(subject)) {
+      showAlert("Subject must be at least 5 characters long.", "error");
+      return;
+    }
+
+    if (!validateTextLength(message)) {
+      showAlert("Message must be at least 5 characters long.", "error");
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/michaelramosdev1@gmail.com", {
+      method: "POST",
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        showAlert("Your message has been sent successfully. Thank you!", "success");
+        form.reset();
+      } else {
+        showAlert("Oops! Something went wrong. Please try again later.", "error");
+      }
+    })
+    .catch(error => {
+      console.error("Form error:", error);
+      showAlert("There was an error sending your message. Please try again.", "error");
+    });
+  });
+</script>
+
+</body>
+</html>
