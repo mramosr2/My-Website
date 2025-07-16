@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .project {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2em;
+      margin: 2em auto;
+      border-radius: 10px;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .project h3 {
+      color: #ffffff;
+    }
+
+    .project p {
+      color: #cccccc;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .btn-custom {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      transition: 0.3s;
+      text-decoration: none;
+      padding: 0.4em 0.8em;
+      display: inline-block;
+      margin-top: 0.5em;
+    }
+
+    .btn-custom:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top px-4" style="background-color: rgba(0, 0, 0, 0.3);">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white hover-underline-animation" href="index.html">Home</a>
+    <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link hover-underline-animation text-white" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hover-underline-animation text-white" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hover-underline-animation text-white" href="Documents/Michael Ramos Spring 2025 Resume.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hover-underline-animation text-white" href="research.html">Research</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="fade-in" style="padding: 6em 2em 4em; text-align: center;">
+  <h2>My Portfolio</h2>
+
+<!-- Project 1 with Carousel -->
+<div class="project">
+  <div id="salmaggiCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="Images/SS1.png" class="d-block w-100" alt="Salmaggi Architects homepage design">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/SS2.png" class="d-block w-100" alt="Architecture projects layout: Hooded Hill House, Café Canopy, The Oasis">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/SS3.png" class="d-block w-100" alt="Embedded architecture portfolio PDF">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#salmaggiCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#salmaggiCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h3>Salmaggi Architects</h3>
+  <p>
+    One of my first complete website projects, built for a real client in architecture. This ongoing design showcases my ability to use HTML, CSS, and JavaScript to build professional web experiences. The project includes a homepage carousel, a project showcase gallery, and an embedded portfolio viewer all styled for clarity, structure, and accessibility.
+  </p>
+  <a href="https://mramosr2.github.io/Salmaggi-Architects-Website/index.html" target="_blank" class="btn-custom">View Live Site</a>
+  <a href="https://github.com/mramosr2/Salmaggi-Architects-Website" target="_blank" class="btn-custom">View Code</a>
+</div>
+
+
+  <!-- Project 2 (Sample) -->
+<div class="project">
+  <!-- Carousel -->
+  <div id="cs3337Carousel" class="carousel slide mb-3" data-bs-ride="carousel">
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="Images/SS4.png" class="d-block w-100" alt="Display Books UI showing book ratings and favorites" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/SS5.png" class="d-block w-100" alt="Django admin panel interface for managing books, comments, and users" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/SS6.png" class="d-block w-100" alt="User registration page with secure password input" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#cs3337Carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cs3337Carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Project Details -->
+  <h3>CS3337 Book Exchange Platform</h3>
+  <p>
+    As team leader, I helped architect and develop a Django-based web application allowing users to share and discover books in a community-driven environment. 
+    This full-stack project combines back-end Python/Django with front-end HTML, CSS, and Bootstrap. Key features include user authentication, secure login, real-time ratings and comments, book management, and admin tools.
+    The platform uses Django models, views, and templates to manage user data and interactions while ensuring accessibility and usability.
+  </p>
+  <a href="https://github.com/mramosr2/CS3337-Group-2-Book-Exchange" target="_blank" class="btn-custom">View GitHub Repo</a>
+  <a href="documents/Software Requirements Specification Document for Group 2.pdf" target="_blank" class="btn-custom">SRS Document</a>
+  <a href="documents/Software Design Specification Document for Group 2.pdf" target="_blank" class="btn-custom">Design Spec</a>
+</div>
+
+
+
+  <!-- Add more projects as needed -->
+
+</section>
+
+<footer class="footer text-white py-3 mt-auto">
+  <div class="container-fluid">
+    <div class="row align-items-center text-center text-md-start">
+      <div class="col-md-6 mb-2 mb-md-0">
+        &copy; 2025 Michael Ramos
+        <a href="https://www.linkedin.com/in/michael-ramos-309108242" target="_blank" class="ms-3 text-white d-inline-flex align-items-center hover-underline-animation">
+          <i class="bi bi-linkedin" style="font-size: 1.2em;"></i>
+        </a>
+        <a href="https://www.instagram.com/mr.ramos_1000/" target="_blank" class="ms-2 text-white d-inline-flex align-items-center hover-underline-animation">
+          <i class="bi bi-instagram" style="font-size: 1.2em;"></i>
+        </a>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <span class="hover-underline-animation">Developed by Michael Ramos</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
