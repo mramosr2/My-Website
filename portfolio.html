@@ -61,6 +61,7 @@
       padding: 0.4em 0.8em;
       display: inline-block;
       margin-top: 0.5em;
+      margin-right: 0.5em;
     }
 
     .btn-custom:hover {
@@ -99,231 +100,278 @@
 <section class="fade-in" style="padding: 6em 2em 4em; text-align: center;">
   <h2>My Portfolio</h2>
 
-<!-- Project 1: The Chat Games — CSU Outreach Website -->
-<div class="project">
-  <div id="chatGamesCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-    <div class="carousel-inner rounded">
-      <div class="carousel-item active">
-        <img src="./Images/chatgames-signup.png" class="d-block w-100"
-             alt="Join The Chat Games list modal shown over a CSU campus photo." />
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/chatgames-about.png" class="d-block w-100"
-             alt="About Chat Games page with team photos and mission statement." />
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/chatgames-events.png" class="d-block w-100"
-             alt="Sign Up section with event cards for CSUN and CSULA." />
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#chatGamesCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#chatGamesCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <h3>The Chat Games — CSU Outreach Website</h3>
-  <p>
-    Selected by OpenAI for the inaugural CSU-wide ChatGPT Student Ambassador program. I co-founded and co-host live “chat games” that teach ethical, effective AI use, and I built the official site with Bootstrap 5, accessible UI, Formspree RSVPs, and captioned demo video. Ongoing project with new games and events rolling out through Fall 2025.
-  </p>
-
-  <div class="badges" aria-label="Project details">
-    <span class="badge rounded-pill text-bg-dark">Ambassador Program</span>
-    <span class="badge rounded-pill text-bg-dark">Bootstrap 5</span>
-    <span class="badge rounded-pill text-bg-dark">Accessible UI</span>
-  </div>
-
-  <a href="https://thechatgames.com" target="_blank" rel="noopener" class="btn-custom" aria-label="Open The Chat Games website in a new tab">
-    Visit Site
-  </a>
-    <a href="https://github.com/mramosr2/the-chat-games-site" target="_blank" class="btn-custom">View GitHub Repo</a>
-</div>
-
-<!-- Project 2: Swift Playground Assistant — iOS App Dev Assist -->
-<div class="project">
-  <div id="swiftGptCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-    <div class="carousel-inner rounded">
-      <div class="carousel-item active">
-        <div class="ratio ratio-16x9">
-               <img src="./Images/GPT6.jpg" class="object-fit-contain"
-               alt="Swift Playground Assistant logo: robot riding the Swift bird." />
+  <!-- Project 1: The Chat Games — CSU Outreach Website -->
+  <div class="project">
+    <div id="chatGamesCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="./Images/chatgames-signup.png" class="d-block w-100"
+               alt="Join The Chat Games list modal shown over a CSU campus photo." />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/chatgames-about.png" class="d-block w-100"
+               alt="About Chat Games page with team photos and mission statement." />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/chatgames-events.png" class="d-block w-100"
+               alt="Sign Up section with event cards for CSUN and CSULA." />
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="ratio ratio-16x9">
-          <img src="./Images/GPT5.jpg" class="w-100 h-100 object-fit-cover"
-               alt="Swift Playground Assistant store listing with title and description." />
+      <button class="carousel-control-prev" type="button" data-bs-target="#chatGamesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#chatGamesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h3>The Chat Games — CSU Outreach Website</h3>
+    <p>
+      Selected by OpenAI for the inaugural CSU-wide ChatGPT Student Ambassador program. I co-founded and co-host live “chat games” that teach ethical, effective AI use, and I built the official site with Bootstrap 5, accessible UI, Formspree RSVPs, and captioned demo video. Ongoing project with new games and events rolling out through Fall 2025.
+    </p>
+
+    <div class="badges" aria-label="Project details">
+      <span class="badge rounded-pill text-bg-dark">Ambassador Program</span>
+      <span class="badge rounded-pill text-bg-dark">Bootstrap 5</span>
+      <span class="badge rounded-pill text-bg-dark">Accessible UI</span>
+    </div>
+
+    <a href="https://thechatgames.com" target="_blank" rel="noopener" class="btn-custom"
+       aria-label="Open The Chat Games website in a new tab">
+      Visit Site
+    </a>
+    <a href="https://github.com/mramosr2/the-chat-games-site" target="_blank" rel="noopener" class="btn-custom">
+      View GitHub Repo
+    </a>
+  </div>
+
+  <!-- Project 2: Monte Sion Center — Food Bank Website (React + Vite) -->
+  <div class="project">
+    <div id="monteSionCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="./Images/MSC1.png" class="d-block w-100"
+               alt="Monte Sion Center homepage hero section in Spanish with large headline and call-to-action buttons." />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/MSC2.png" class="d-block w-100"
+               alt="Contact page showing the embedded map and the bilingual contact form layout." />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/MSC3.png" class="d-block w-100"
+               alt="Donate page layout with donation options and a photo gallery card on the right." />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/MSC4.png" class="d-block w-100"
+               alt="Donation modal with PayPal, Venmo, and Zelle options including QR codes and copy buttons." />
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="ratio ratio-16x9 d-flex align-items-center justify-content-center bg-black">
-          <img src="./Images/GPT4.jpg" class="w-100 h-100 object-fit-cover"
-               alt="Swift Playground Assistant builder preview creating a SwiftUI MVVM starter." />
+      <button class="carousel-control-prev" type="button" data-bs-target="#monteSionCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#monteSionCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h3>Monte Sion Center — Food Bank Website (React + Vite)</h3>
+    <p>
+      A full redesign and rebuild of a nonprofit food bank website into a modern, bilingual (English/Spanish) React app. I implemented a clean navigation system, accessible UI patterns, a donation flow with PayPal/Venmo/Zelle options and QR codes, and a working contact form connected to an API endpoint for sending messages. The site is deployed with a GitHub Actions pipeline to GitHub Pages and configured to work with a custom domain.
+    </p>
+
+    <div class="badges" aria-label="Project details">
+      <span class="badge rounded-pill text-bg-dark">React + Vite</span>
+      <span class="badge rounded-pill text-bg-dark">i18n (EN/ES)</span>
+      <span class="badge rounded-pill text-bg-dark">Contact API</span>
+      <span class="badge rounded-pill text-bg-dark">GitHub Actions</span>
+      <span class="badge rounded-pill text-bg-dark">GitHub Pages</span>
+    </div>
+
+    <a href="https://montesioncenter.org" target="_blank" rel="noopener" class="btn-custom"
+       aria-label="Open the Monte Sion Center website in a new tab">
+      Visit Site
+    </a>
+    <a href="https://github.com/mramosr2/monte-sion-center-website" target="_blank" rel="noopener" class="btn-custom">
+      View GitHub Repo
+    </a>
+  </div>
+
+  <!-- Project 3: Swift Playground Assistant — iOS App Dev Assist -->
+  <div class="project">
+    <div id="swiftGptCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <div class="ratio ratio-16x9">
+            <img src="./Images/GPT6.jpg" class="object-fit-contain"
+                 alt="Swift Playground Assistant logo: robot riding the Swift bird." />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9">
+            <img src="./Images/GPT5.jpg" class="w-100 h-100 object-fit-cover"
+                 alt="Swift Playground Assistant store listing with title and description." />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9 d-flex align-items-center justify-content-center bg-black">
+            <img src="./Images/GPT4.jpg" class="w-100 h-100 object-fit-cover"
+                 alt="Swift Playground Assistant builder preview creating a SwiftUI MVVM starter." />
+          </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#swiftGptCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#swiftGptCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#swiftGptCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#swiftGptCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  
+    <h3>Swift Playground Assistant — iOS App Dev Assist</h3>
+    <p>
+      A custom GPT that pairs with Swift Playgrounds to fix Swift/SwiftUI code in plain English and guide you step by step. It compiles and tests uploaded Swift Packages to catch errors early, returning minimal diffs you can paste in. Accessibility is built in: Dynamic Type, VoiceOver labels, and large tap targets.
+    </p>
 
-  <h3>Swift Playground Assistant — iOS App Dev Assist</h3>
-  <p>
-    A custom GPT that pairs with Swift Playgrounds to fix Swift/SwiftUI code in plain English and guide you step by step. It compiles and tests uploaded Swift Packages to catch errors early, returning minimal diffs you can paste in. Accessibility is built in: Dynamic Type, VoiceOver labels, and large tap targets.
-  </p>
-
-  <div class="badges" aria-label="Project details">
-    <span class="badge rounded-pill text-bg-dark">Developer Tools</span>
-    <span class="badge rounded-pill text-bg-dark">Swift • SwiftUI</span>
-    <span class="badge rounded-pill text-bg-dark">Action: /compile</span>
-  </div>
-
-  <a href="https://chatgpt.com/g/g-68d21dcbb3008191b941ef16ba86df49-swift-playground-assistant-ios-app-dev-assist"
-     target="_blank" rel="noopener" class="btn-custom">Open GPT</a>
-  <a href="https://swift-build-action.onrender.com/privacy" target="_blank" rel="noopener" class="btn-custom">Privacy Policy</a>
-  <a href="https://swift-build-action.onrender.com/openapi.json" target="_blank" rel="noopener" class="btn-custom">API Schema</a>
-</div>
-  <!-- Project 3: Web Accessibility Auditor — Alt Text & WCAG -->
-
- <div class="project">
-  <div id="gptA11yCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-    <div class="carousel-inner rounded">
-      <div class="carousel-item active">
-        <img src="./Images/GPT1_hero.jpg" class="d-block w-100" alt="Web Accessibility Auditor homepage with title, description, and three interface buttons.">
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/GPT2_hero.jpg" class="d-block w-100" alt="JSON output with alt text fields for a screenshot of the Web Accessibility Auditor interface.">
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/GPT3_hero_plain.jpg" class="d-block w-100" alt="WCAG violation results from a scanned page, listing missing language attributes and main landmark.">
-      </div>
+    <div class="badges" aria-label="Project details">
+      <span class="badge rounded-pill text-bg-dark">Developer Tools</span>
+      <span class="badge rounded-pill text-bg-dark">Swift • SwiftUI</span>
+      <span class="badge rounded-pill text-bg-dark">Action: /compile</span>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#gptA11yCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#gptA11yCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
+    <a href="https://chatgpt.com/g/g-68d21dcbb3008191b941ef16ba86df49-swift-playground-assistant-ios-app-dev-assist"
+       target="_blank" rel="noopener" class="btn-custom">Open GPT</a>
+    <a href="https://swift-build-action.onrender.com/privacy" target="_blank" rel="noopener" class="btn-custom">Privacy Policy</a>
+    <a href="https://swift-build-action.onrender.com/openapi.json" target="_blank" rel="noopener" class="btn-custom">API Schema</a>
   </div>
 
-<h3>Web Accessibility Auditor — Alt Text & WCAG</h3>
-<p>
-  A custom GPT I built to generate high-quality alt text and audit full web pages for WCAG 2.1/2.2. It flags contrast issues, keyboard traps, and focus order problems, and returns copy-paste fixes. When a URL is provided, it calls a headless Playwright + axe-core scan Action and merges results into strict JSON; it also supports “JSON only” output for developer workflows.
-</p>
-
-<div class="badges" aria-label="Project details">
-  <span class="badge rounded-pill text-bg-dark">Developer Tools</span>
-  <span class="badge rounded-pill text-bg-dark">WCAG 2.1/2.2</span>
-  <span class="badge rounded-pill text-bg-dark">Action: /scan</span>
-</div>
-
-<a href="https://chatgpt.com/g/g-68ce4a19c7848191a9192ef08018e523-web-accessibility-auditor-alt-text-wcag?model=gpt-5-thinking" 
-   target="_blank" rel="noopener" 
-   class="btn-custom" 
-   aria-label="Open the Web Accessibility Auditor GPT in a new tab">
-  Open GPT
-</a>
-
-<a href="https://a11y-scan.onrender.com/privacy" 
-   class="btn-custom" 
-   aria-label="Read the Privacy Policy for this GPT">
-  Privacy Policy
-</a>
-
-<a href="https://a11y-scan.onrender.com/openapi.json" 
-   target="_blank" rel="noopener" 
-   class="btn-custom" 
-   aria-label="View the OpenAPI schema for the scan Action in a new tab">
-  API Schema
-</a>
-
-
-
-  <!-- Project 4: Salmaggi Architects Website -->
-<div class="project">
-  <div id="salmaggiCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-    <div class="carousel-inner rounded">
-      <div class="carousel-item active">
-        <img src="./Images/SS1.png" class="d-block w-100" alt="Salmaggi Architects homepage design">
+  <!-- Project 4: Web Accessibility Auditor — Alt Text & WCAG -->
+  <div class="project">
+    <div id="gptA11yCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="./Images/GPT1_hero.jpg" class="d-block w-100" alt="Web Accessibility Auditor homepage with title, description, and three interface buttons.">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/GPT2_hero.jpg" class="d-block w-100" alt="JSON output with alt text fields for a screenshot of the Web Accessibility Auditor interface.">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/GPT3_hero_plain.jpg" class="d-block w-100" alt="WCAG violation results from a scanned page, listing missing language attributes and main landmark.">
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="./Images/SS2.png" class="d-block w-100" alt="Architecture projects layout: Hooded Hill House, Café Canopy, The Oasis">
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/SS3.png" class="d-block w-100" alt="Embedded architecture portfolio PDF">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#gptA11yCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gptA11yCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#salmaggiCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#salmaggiCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <h3>Salmaggi Architects</h3>
-  <p>
-    One of my first complete website projects, built for a real client in architecture. This ongoing design showcases my ability to use HTML, CSS, and JavaScript to build professional web experiences. The project includes a homepage carousel, a project showcase gallery, and an embedded portfolio viewer all styled for clarity, structure, and accessibility.
-  </p>
-  <a href="https://mramosr2.github.io/Salmaggi-Architects-Website/index.html" target="_blank" class="btn-custom">View Live Site</a>
-  <a href="https://github.com/mramosr2/Salmaggi-Architects-Website" target="_blank" class="btn-custom">View Code</a>
-</div>
+    <h3>Web Accessibility Auditor — Alt Text & WCAG</h3>
+    <p>
+      A custom GPT I built to generate high-quality alt text and audit full web pages for WCAG 2.1/2.2. It flags contrast issues, keyboard traps, and focus order problems, and returns copy-paste fixes. When a URL is provided, it calls a headless Playwright + axe-core scan Action and merges results into strict JSON; it also supports “JSON only” output for developer workflows.
+    </p>
 
-
-  <!-- Project 5: CS3337 Book Exchange Platform -->
-<div class="project">
-  <div id="cs3337Carousel" class="carousel slide mb-3" data-bs-ride="carousel">
-    <div class="carousel-inner rounded">
-      <div class="carousel-item active">
-        <img src="./Images/SS4.png" class="d-block w-100" alt="Display Books UI showing book ratings and favorites" />
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/SS5.png" class="d-block w-100" alt="Django admin panel interface for managing books, comments, and users" />
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/SS6.png" class="d-block w-100" alt="User registration page with secure password input" />
-      </div>
+    <div class="badges" aria-label="Project details">
+      <span class="badge rounded-pill text-bg-dark">Developer Tools</span>
+      <span class="badge rounded-pill text-bg-dark">WCAG 2.1/2.2</span>
+      <span class="badge rounded-pill text-bg-dark">Action: /scan</span>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#cs3337Carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#cs3337Carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
+    <a href="https://chatgpt.com/g/g-68ce4a19c7848191a9192ef08018e523-web-accessibility-auditor-alt-text-wcag?model=gpt-5-thinking"
+       target="_blank" rel="noopener" class="btn-custom"
+       aria-label="Open the Web Accessibility Auditor GPT in a new tab">
+      Open GPT
+    </a>
+
+    <a href="https://a11y-scan.onrender.com/privacy"
+       target="_blank" rel="noopener"
+       class="btn-custom"
+       aria-label="Read the Privacy Policy for this GPT">
+      Privacy Policy
+    </a>
+
+    <a href="https://a11y-scan.onrender.com/openapi.json"
+       target="_blank" rel="noopener"
+       class="btn-custom"
+       aria-label="View the OpenAPI schema for the scan Action in a new tab">
+      API Schema
+    </a>
   </div>
 
-  <!-- Project Details -->
-  <h3>CS3337 Book Exchange Platform</h3>
-  <p>
-    As team leader, I helped architect and develop a Django-based web application allowing users to share and discover books in a community-driven environment. 
-    This full-stack project combines back-end Python/Django with front-end HTML, CSS, and Bootstrap. Key features include user authentication, secure login, real-time ratings and comments, book management, and admin tools.
-    The platform uses Django models, views, and templates to manage user data and interactions while ensuring accessibility and usability.
-  </p>
-  <a href="https://github.com/mramosr2/CS3337-Project" target="_blank" class="btn-custom">View GitHub Repo</a>
-  <a href="./documents/Software Requirements Specification Document for Group 2.pdf" target="_blank" class="btn-custom">SRS Document</a>
-  <a href="./documents/Software Design Specification Document for Group 2.pdf" target="_blank" class="btn-custom">Design Spec</a>
-</div>
+  <!-- Project 5: Salmaggi Architects Website -->
+  <div class="project">
+    <div id="salmaggiCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="./Images/SS1.png" class="d-block w-100" alt="Salmaggi Architects homepage design">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/SS2.png" class="d-block w-100" alt="Architecture projects layout: Hooded Hill House, Café Canopy, The Oasis">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/SS3.png" class="d-block w-100" alt="Embedded architecture portfolio PDF">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#salmaggiCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#salmaggiCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
+    <h3>Salmaggi Architects</h3>
+    <p>
+      One of my first complete website projects, built for a real client in architecture. This ongoing design showcases my ability to use HTML, CSS, and JavaScript to build professional web experiences. The project includes a homepage carousel, a project showcase gallery, and an embedded portfolio viewer all styled for clarity, structure, and accessibility.
+    </p>
+    <a href="https://mramosr2.github.io/Salmaggi-Architects-Website/index.html" target="_blank" rel="noopener" class="btn-custom">View Live Site</a>
+    <a href="https://github.com/mramosr2/Salmaggi-Architects-Website" target="_blank" rel="noopener" class="btn-custom">View Code</a>
+  </div>
 
+  <!-- Project 6: CS3337 Book Exchange Platform -->
+  <div class="project">
+    <div id="cs3337Carousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="./Images/SS4.png" class="d-block w-100" alt="Display Books UI showing book ratings and favorites" />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/SS5.png" class="d-block w-100" alt="Django admin panel interface for managing books, comments, and users" />
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/SS6.png" class="d-block w-100" alt="User registration page with secure password input" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#cs3337Carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cs3337Carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-  <!-- Add more projects as needed -->
+    <h3>CS3337 Book Exchange Platform</h3>
+    <p>
+      As team leader, I helped architect and develop a Django-based web application allowing users to share and discover books in a community-driven environment.
+      This full-stack project combines back-end Python/Django with front-end HTML, CSS, and Bootstrap. Key features include user authentication, secure login, real-time ratings and comments, book management, and admin tools.
+      The platform uses Django models, views, and templates to manage user data and interactions while ensuring accessibility and usability.
+    </p>
+    <a href="https://github.com/mramosr2/CS3337-Project" target="_blank" rel="noopener" class="btn-custom">View GitHub Repo</a>
+    <a href="./documents/Software Requirements Specification Document for Group 2.pdf" target="_blank" rel="noopener" class="btn-custom">SRS Document</a>
+    <a href="./documents/Software Design Specification Document for Group 2.pdf" target="_blank" rel="noopener" class="btn-custom">Design Spec</a>
+  </div>
 
 </section>
 
@@ -332,10 +380,12 @@
     <div class="row align-items-center text-center text-md-start">
       <div class="col-md-6 mb-2 mb-md-0">
         &copy; 2025 Michael Ramos
-        <a href="https://www.linkedin.com/in/michael-ramos-309108242" target="_blank" class="ms-3 text-white d-inline-flex align-items-center hover-underline-animation">
+        <a href="https://www.linkedin.com/in/michael-ramos-309108242" target="_blank" rel="noopener"
+           class="ms-3 text-white d-inline-flex align-items-center hover-underline-animation">
           <i class="bi bi-linkedin" style="font-size: 1.2em;"></i>
         </a>
-        <a href="https://www.instagram.com/mr.ramos_1000/" target="_blank" class="ms-2 text-white d-inline-flex align-items-center hover-underline-animation">
+        <a href="https://www.instagram.com/mr.ramos_1000/" target="_blank" rel="noopener"
+           class="ms-2 text-white d-inline-flex align-items-center hover-underline-animation">
           <i class="bi bi-instagram" style="font-size: 1.2em;"></i>
         </a>
       </div>
